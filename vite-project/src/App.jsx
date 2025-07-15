@@ -5,6 +5,9 @@ import './App.css'
 import HelloComponent from './HelloComponent';
 import Displaydata from './Displaydata';
 import Button from './Button';
+import Counter from './counter';
+import UserCard from './User/UserCard';
+import userObject from './User/User.js';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,8 +28,9 @@ function App() {
       <div>
         <Displaydata fruits={fruits} person={person} />
       </div>
-        <Button/>
-
+        <Button/> 
+        <Counter/>
+        <UserCard user={userObject} />
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
