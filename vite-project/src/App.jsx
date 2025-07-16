@@ -8,6 +8,8 @@ import Button from './Button';
 import Counter from './counter';
 import UserCard from './User/UserCard';
 import userObject from './User/User.js';
+import ProductList from './ProductList/Product'
+import products from './ProductList/products'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,6 +33,7 @@ function App() {
         <Button/> 
         <Counter/>
         <UserCard user={userObject} />
+         <ProductList products={products} />
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
